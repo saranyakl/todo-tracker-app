@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Josefine";   /*Can be any text*/
+    src: local("JosefineSans"),
+      url("../assets/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  }
+.body-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.body-wrapper.dark-mode {
+    background-color: #222;
+}
+.body-wrapper.light-mode {
+    background-color: white;
+}
+
+.attribution {
+    display: none;
+}
+.mainContent-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 40%;
+    height: 70%;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 20;
+    margin: 15% 0;
+}
+.todo-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-title {
+    font-family: "Josefine";
+    font-weight: 700;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 1.8rem;
+}
+.toggle-icon {
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .mainContent-wrapper {
+        width: 80%;
+        height: 80%;
+        margin: 10% 0;
+    }
+}

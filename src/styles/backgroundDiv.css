@@ -1,0 +1,31 @@
+.background {
+  background-image: url("../images/bg-desktop-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: self-start;
+  position: absolute;
+}
+
+@media (max-width: 400px) {
+  .background.dark-mode {
+    background-image: url("../images/bg-mobile-dark.jpg");
+  }
+  
+  .background.light-mode {
+    background-image: url("../images/bg-mobile-light.jpg");
+  }
+}
+
+@media (min-width: 401px) {
+  .background.dark-mode {
+    background-image: url("../images/bg-desktop-dark.jpg");
+  }
+  
+  .background.light-mode {
+    background-image: url("../images/bg-desktop-light.jpg");
+  }
+}
