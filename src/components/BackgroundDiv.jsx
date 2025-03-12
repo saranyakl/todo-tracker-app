@@ -1,4 +1,4 @@
-import '../styles/backgroundDiv.css'
+import '../styles/BackgroundDiv.css'
 
 const BackgroundDiv = ({ theme }) => {
     return (
